@@ -3,4 +3,8 @@
     <string name="textview">TextView</string>
     <string name="todo">TODO</string>
     <string name="todos">TODO</string>
+    <string name="textvieww">TextView</string>
+    <string name="todoss">TODO</string>
+    <string name="todoos">TODO</string>
+    <string name="todoes">TODO</string>
 </resources>

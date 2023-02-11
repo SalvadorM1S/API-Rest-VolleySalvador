@@ -10,13 +10,15 @@
         android:id="@+id/imageView"
         android:layout_width="406dp"
         android:layout_height="338dp"
+        android:contentDescription="@string/todoes"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.587"
-        app:srcCompat="@drawable/pokedex" />
+        app:srcCompat="@drawable/pokedex"
+        tools:ignore="ImageContrastCheck" />
 
     <TextView
         android:id="@+id/nombre"
@@ -24,7 +26,7 @@
         android:layout_height="59dp"
         android:layout_marginStart="240dp"
         android:gravity="center_horizontal"
-        android:text="TextView"
+        android:text="@string/textvieww"
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textSize="24sp"
@@ -41,7 +43,8 @@
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintStart_toStartOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/imageView"
-        app:layout_constraintVertical_bias="0.463" />
+        app:layout_constraintVertical_bias="0.463"
+        android:contentDescription="@string/todoss" />
 
     <ImageButton
         android:id="@+id/btnAnt"
@@ -50,11 +53,13 @@
         android:layout_marginTop="112dp"
         android:background="@android:color/transparent"
         android:baselineAlignBottom="true"
+        android:contentDescription="@string/app_name"
         android:visibility="visible"
         app:layout_constraintEnd_toEndOf="@+id/nombre"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@+id/nombre"
-        app:layout_constraintTop_toBottomOf="@+id/nombre" />
+        app:layout_constraintTop_toBottomOf="@+id/nombre"
+        tools:ignore="ImageContrastCheck" />
 
     <ImageButton
         android:id="@+id/btnSig"
@@ -62,9 +67,11 @@
         android:layout_height="43dp"
         android:layout_marginStart="8dp"
         android:background="@android:color/transparent"
+        android:contentDescription="@string/todoos"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="@+id/btnAnt"
         app:layout_constraintStart_toEndOf="@+id/btnAnt"
         app:layout_constraintTop_toTopOf="@+id/btnAnt"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="ImageContrastCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
